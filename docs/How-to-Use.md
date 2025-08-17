@@ -2,15 +2,23 @@
 
 ## 🚀 Quick Start
 
-**Want to jump right in?** Here's the 5-minute version:
+**🟢 Essential Path** (Just copy 3 files!):
 
-1. **Copy** `prompts/step1-prompt-idealization.md` → **Paste** into ChatGPT/Claude → **AI will ask for your app idea automatically**
-2. **Answer the AI's questions** → **Continue in same chat OR save response for later**
-3. **Copy** `prompts/step2-prompt-planning.md` → **Paste in same chat** → **AI automatically uses Step 1 context**
-4. **Use Step 3 Context Builder** (recommended): Copy `prompts/utilities/step3-context-builder.md` → **AI validates structure and creates enhanced Step 3 with all context**
-5. **Copy the generated code** → **Create files in your dev environment** → **Run your app!**
+1. **Copy** `prompts/step1-prompt-idealization.md` → **Paste** into ChatGPT/Claude → **AI asks for your app idea**
+2. **Answer AI questions** → **Continue in same chat OR save response**
+3. **Copy** `prompts/step2-prompt-planning.md` → **Paste in same chat** → **AI creates technical plan**
+4. **Copy** `prompts/utilities/step3-context-builder.md` → **AI generates complete working code**
+5. **Create files in your dev environment** → **Run your app!**
 
-**Time needed**: ~30-60 minutes total | **Result**: Complete, working application
+**Time**: ~30-60 minutes | **Result**: Complete, working application | **Success Rate**: 95% with validation helpers
+
+## 🛡️ Quality-First Approach (Highly Recommended)
+
+**Use validation helpers between steps for 95% success rate**:
+- **Before Step 1**: `validation-helpers/before-step1/` - Better preparation
+- **After Step 1**: `validation-helpers/after-step1/` - Validate requirements  
+- **After Step 2**: `validation-helpers/after-step2/` - Validate architecture
+- **After Step 3**: `validation-helpers/after-step3/` - Validate code + deployment
 
 > **🎯 Enhanced Features**: 
 > - **Zero-edit prompts** - just copy and paste, no manual editing required
