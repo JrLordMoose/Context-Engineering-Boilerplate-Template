@@ -53,7 +53,8 @@ A systematic, research-backed workflow for building applications using smart AI 
 Context Engineering Template/
 ├── CLAUDE.md                     # Enhanced AI configuration with Context Engineering protocols
 ├── docs/
-│   └── How-to-Use.md            # Complete guide with FAQ, troubleshooting, and transfer instructions
+│   ├── How-to-Use.md            # Complete guide with FAQ, troubleshooting, and transfer instructions
+│   └── Advanced-Applications.md # Enterprise and complex system development guide
 ├── prompts/
 │   ├── step0-prompt-setup.md         # Context Engineering configuration setup (5-10 min)
 │   ├── step1-prompt-idealization.md  # Smart requirements gathering (10-15 min)
@@ -154,10 +155,11 @@ Each step builds comprehensive understanding:
 
 **Complete Guide**:
 1. **Read** `docs/How-to-Use.md` for full instructions and examples
-2. **Copy prompt templates** from `prompts/` folder to your AI chat
-3. **Follow the 5-step workflow** with time estimates and success checkpoints (Steps 0 & 5 optional)
-4. **Transfer generated code** to your development environment
-5. **Deploy your application** and start using it!
+2. **For complex/enterprise apps**: Read `docs/Advanced-Applications.md` for sophisticated development patterns
+3. **Copy prompt templates** from `prompts/` folder to your AI chat
+4. **Follow the 5-step workflow** with time estimates and success checkpoints (Steps 0 & 5 optional)
+5. **Transfer generated code** to your development environment
+6. **Deploy your application** and start using it!
 
 ## 📚 Resources
 
