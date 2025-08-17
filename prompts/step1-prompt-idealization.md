@@ -20,7 +20,7 @@ Execute the `/step1.idealization` protocol:
 
 [Paste your app idea here - be as detailed or vague as you'd like to start] 
 
-[If this section is empty when submitted, please ask the user: "What app or software would you like to build? You can describe it in any level of detail - even just a few words or a vague idea is perfect to start with." Then proceed with the idealization process once they provide their idea.]
+[If this section is empty when submitted, first check if we just completed Step 0 in this same chat conversation. If yes, automatically use that Step 0 output and proceed directly to planning. If no Step 0 context exists in this chat, then ask the user: "I need the project scope for Step 1 to create your technical plan. Can you either paste your Step 1 idea here, or tell me about your app idea so I can help you with both the idealization and planning phases?" Then proceed with idealization first if needed, followed by planning.]
 
 ## Your Systematic Process
 

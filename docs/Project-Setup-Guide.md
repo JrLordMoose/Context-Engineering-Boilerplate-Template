@@ -2,93 +2,178 @@
 
 ## 🎯 Quick Answer: Where Do Generated Files Go?
 
-**Simple Rule**: Create a **NEW folder** for each project you build. Put ALL generated files (Step 0 config + Step 3 code) in that folder.
+**Simple Rule**: This template is a **reference guide** that you download/bookmark separately. For each app you build, create a **completely separate project folder** in your own workspace.
 
 ```
 your-workspace/
-├── Context-Engineering-Boilerplate-Template/    # This template (keep it separate!)
-├── my-task-manager/                             # Your first project
-├── my-ecommerce-store/                          # Your second project  
-└── my-analytics-dashboard/                      # Your third project
+├── my-task-manager/          # Your first app (separate folder)
+├── my-ecommerce-store/       # Your second app (separate folder)
+├── my-analytics-dashboard/   # Your third app (separate folder)
+└── other-projects/
+
+# Template lives elsewhere (download once, reference forever):
+~/Downloads/Context-Engineering-Boilerplate-Template/  # Or bookmark GitHub
 ```
 
-**Never mix**: Template files and your project files should stay completely separate.
+**Key Concept**: This template is like a cookbook - you reference the recipes but cook in your own kitchen.
 
 ---
 
-## Complete Setup Process (5 Minutes)
+## How to Use This Template (First Time Setup)
 
-### Before You Start Any Project
+### Understanding the Template vs Your Projects
 
-**Step 1: Choose Your Workspace Location**
-Pick where you want to create projects. Common choices:
+**This Template**: Reference guide you download once and keep separate
+- Contains prompts to copy/paste into AI chats
+- Documentation for learning the workflow
+- Configuration examples for different project types
+- **Never modified** - always stays as reference
+
+**Your Projects**: Individual apps you build using the template
+- Each app gets its own completely separate folder
+- Generated files from the workflow go in the app folder
+- You build many apps, but reference one template
+
+### One-Time Template Setup
+
+**Step 1: Get the Template**
+Choose one method:
+- **Download ZIP**: GitHub → Code → Download ZIP → Extract to convenient location
+- **Clone Repository**: `git clone https://github.com/JrLordMoose/Context-Engineering-Boilerplate-Template.git`
+- **Bookmark**: Just bookmark the GitHub page and reference online
+
+**Step 2: Choose Your Project Workspace**
+Pick where you'll create your actual apps (completely separate from template):
 - `C:\Users\YourName\Projects\` (Windows)
-- `/Users/YourName/Projects/` (Mac)
+- `/Users/YourName/Projects/` (Mac)  
 - `/home/YourName/projects/` (Linux)
 - `~/workspace/` (Any system)
 
-**Step 2: Keep Template Separate**
-The Context Engineering Template should stay in its own folder:
-- **✅ Good**: `~/workspace/Context-Engineering-Boilerplate-Template/` (template)
-- **✅ Good**: `~/workspace/my-awesome-app/` (your project)
-- **❌ Bad**: Mixing template files with your project files
+**Final Setup**:
+```
+your-computer/
+├── Downloads/Context-Engineering-Template/     # Template (reference only)
+└── Projects/                                  # Your apps go here
+    └── [This is where you'll create individual apps]
+```
 
 ---
 
-## For Each New Project You Build
+## Building Your First App (Complete Walkthrough)
 
-### Step-by-Step File Management
+### The Template Reference Workflow
 
-#### Before Step 0: Create Project Folder
+**How It Works**: You reference the template prompts but build apps in your own workspace.
 
-**1. Decide on project name** (use simple, lowercase names):
-- `my-task-manager`
-- `team-chat-app`  
-- `expense-tracker`
-- `ecommerce-store`
+**Template Stays Here** (reference only):
+- GitHub: https://github.com/JrLordMoose/Context-Engineering-Boilerplate-Template
+- Downloaded folder: `~/Downloads/Context-Engineering-Template/`
+- Bookmarked page for easy access
 
-**2. Create the folder**:
+**Your Apps Go Here** (your workspace):
+- `~/Projects/my-task-manager/` (first app)
+- `~/Projects/my-store/` (second app)
+- `~/Projects/my-dashboard/` (third app)
 
-**Windows (File Explorer)**:
-- Right-click in your workspace folder → New → Folder
-- Name it your project name (e.g., `my-task-manager`)
+### Step-by-Step: Building Your First App
 
-**Mac/Linux (Terminal)**:
+#### Step 1: Create Your App Folder (Before Using Any Prompts)
+
+**Navigate to your projects workspace**:
 ```bash
-cd ~/workspace
+# Go to your projects directory (create if it doesn't exist)
+mkdir -p ~/Projects
+cd ~/Projects
+```
+
+**Create folder for this specific app**:
+```bash
+# Use descriptive name for your app
 mkdir my-task-manager
 cd my-task-manager
 ```
 
-**Any System (VS Code)**:
-- File → Open Folder → Navigate to workspace
-- Right-click → New Folder → Name it your project name
+**Alternative (File Explorer/Finder)**:
+- Navigate to your Projects folder
+- Right-click → New Folder → Name: `my-task-manager`
+- Open this folder (this is where ALL generated files will go)
 
-#### During Step 0: Save Configuration Files
+#### Step 2: Reference Template and Run Step 0
 
-**Step 0 generates these files**:
-- `CLAUDE.md` (AI configuration for your project)
-- `context-sources.md` (technology-specific information sources)
-- `.claude/subagents/` folder (specialized AI helpers)
+**Open the template** (in separate window/tab):
+- GitHub page OR downloaded template folder
+- Navigate to `prompts/step0-prompt-setup.md`
 
-**Where to save them**: In your project folder (`my-task-manager/`)
+**Copy the Step 0 prompt**:
+- Copy the entire content of `step0-prompt-setup.md`
+- Paste into AI chat (ChatGPT, Claude Desktop, etc.)
 
-**How to save**:
-1. **Copy the generated CLAUDE.md content** from AI chat
-2. **Create file**: `my-task-manager/CLAUDE.md`
-3. **Paste the content** into the file
-4. **Repeat for all generated files**
+**Save Step 0 generated files** in YOUR app folder (`~/Projects/my-task-manager/`):
+- `CLAUDE.md` → Save in your app folder
+- `context-sources.md` → Save in your app folder  
+- `.claude/subagents/` → Create folder and save files
 
-**Final structure after Step 0**:
+**Result after Step 0**:
 ```
-my-task-manager/
-├── CLAUDE.md              # Your project's AI configuration
-├── context-sources.md     # Technology information sources
-└── .claude/               # AI helper configurations
+~/Projects/my-task-manager/        # Your app folder
+├── CLAUDE.md                      # Generated for YOUR app
+├── context-sources.md             # Generated for YOUR app
+└── .claude/                       # Generated for YOUR app
     └── subagents/
         ├── code-generator.md
         ├── project-planner.md
         └── tech-advisor.md
+
+# Template stays separate and unchanged:
+~/Downloads/Context-Engineering-Template/  # Reference only
+├── prompts/ (you copy from here)
+└── docs/ (you read from here)
+```
+
+#### Step 3: Continue With Steps 1-3 (Reference Template)
+
+**For each subsequent step**:
+
+**Copy prompts from template**:
+- **Step 1**: Copy `prompts/step1-prompt-idealization.md` from template
+- **Step 2**: Copy `prompts/step2-prompt-planning.md` from template  
+- **Step 3**: Copy `prompts/step3-prompt-build.md` from template
+
+**Paste into AI chat**:
+- Use same chat session for automatic context continuity
+- OR start new session and provide previous outputs when requested
+
+**Save outputs in YOUR app folder** (`~/Projects/my-task-manager/`):
+- **Step 1**: Keep in chat history (or save as `planning/requirements.md`)
+- **Step 2**: Keep in chat history (or save as `planning/architecture.md`)
+- **Step 3**: Create all code files exactly as AI specifies
+
+#### Step 4: Complete App Structure (After Step 3)
+
+**Your finished app folder** will look like this:
+```
+~/Projects/my-task-manager/        # Your complete app
+├── CLAUDE.md                      # From Step 0 (your AI config)
+├── package.json                   # From Step 3 (dependencies)
+├── README.md                      # From Step 3 (app documentation)
+├── src/                           # From Step 3 (source code)
+│   ├── App.js
+│   ├── components/
+│   └── pages/
+├── tests/                         # From Step 3 (test files)
+├── public/                        # From Step 3 (assets)
+└── .claude/                       # From Step 0 (AI helpers)
+    └── subagents/
+
+# Template remains untouched:
+~/Downloads/Context-Engineering-Template/  # Still just reference
+```
+
+**Ready to develop**:
+```bash
+cd ~/Projects/my-task-manager
+npm install    # Install dependencies  
+npm start      # Run your app!
 ```
 
 #### During Steps 1-2: Save Planning Documents
@@ -200,28 +285,34 @@ cd ~/workspace/my-task-manager
 
 ## Multiple Projects Management
 
-### Workspace Organization
+### Workspace Organization (Template Separate from Projects)
 
-**Recommended structure**:
+**Recommended structure for your workspace**:
 ```
-your-workspace/
-├── Context-Engineering-Boilerplate-Template/    # Template (never modify)
-├── personal-projects/                           # Your personal apps
-│   ├── task-manager/
-│   ├── expense-tracker/
-│   └── recipe-organizer/
-├── work-projects/                               # Work-related apps
-│   ├── team-dashboard/
-│   ├── inventory-system/
-│   └── customer-portal/
-├── learning-projects/                           # Practice/learning apps
-│   ├── todo-app/
-│   ├── weather-app/
-│   └── chat-app/
-└── experimental/                                # Testing new ideas
-    ├── ai-experiment/
-    └── complex-system-test/
+your-computer/
+├── Downloads/Context-Engineering-Template/      # Template (reference only)
+│   ├── prompts/ (copy prompts from here)
+│   └── docs/ (read documentation from here)
+│
+└── Projects/                                    # Your actual apps
+    ├── personal/                                # Personal apps
+    │   ├── task-manager/
+    │   ├── expense-tracker/
+    │   └── recipe-organizer/
+    ├── work/                                    # Work apps
+    │   ├── team-dashboard/
+    │   ├── inventory-system/
+    │   └── customer-portal/
+    ├── learning/                                # Practice apps
+    │   ├── todo-app/
+    │   ├── weather-app/
+    │   └── chat-app/
+    └── experimental/                            # Testing new ideas
+        ├── ai-experiment/
+        └── complex-system-test/
 ```
+
+**Key Principle**: Template is your reference cookbook. Projects are your actual kitchens where you cook.
 
 ### Project Naming Conventions
 
@@ -238,17 +329,28 @@ your-workspace/
 - `project1`
 - `My App With Spaces`
 
-### Reusing Template for Multiple Projects
+### Using Template for Multiple Projects
 
-**Each project gets**:
-- Its own folder
-- Its own Step 0 configuration (custom CLAUDE.md)
-- Its own generated code (Step 3 output)
+**Template Usage Pattern**:
+1. **Download/bookmark template once** - Keep as permanent reference
+2. **For each new app** - Create separate folder in your Projects directory
+3. **Copy prompts from template** - Reference the same prompts for every project
+4. **Generate files in app folder** - Each app gets its own complete file structure
 
-**Template folder**:
-- Keep the original template unchanged
-- Copy prompts from template for each new project
-- Reference documentation from template
+**Example workflow for multiple projects**:
+```bash
+# One-time: Get template
+git clone https://github.com/JrLordMoose/Context-Engineering-Boilerplate-Template.git
+cd ~/Downloads/  # Keep template here for reference
+
+# For each app you build:
+cd ~/Projects/
+mkdir my-new-app && cd my-new-app    # New app folder
+# Copy prompts from ~/Downloads/Context-Engineering-Template/prompts/
+# Run workflow, save all files here in my-new-app/
+```
+
+**Template stays unchanged** - You never modify the original template, just reference it repeatedly.
 
 ---
 

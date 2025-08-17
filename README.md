@@ -25,14 +25,15 @@ A systematic, research-backed workflow for building applications using smart AI 
 
 ## 📋 New User? Start Here
 
-**🚨 Important**: Before using any prompts, understand where generated files go:
+**🚨 Essential Understanding**: This template is a **reference guide** - you use it to build apps in your own workspace.
 
 1. **📖 Read First**: [Project Setup Guide](docs/Project-Setup-Guide.md) - **Essential** file organization guide
-2. **📁 Create Project Folder**: Make a new folder for your app (e.g., `my-awesome-app`)
-3. **🚀 Begin Workflow**: Use prompts and save ALL generated files in your project folder
-4. **⚡ Deploy**: Your organized project is ready to run!
+2. **📁 Download/Bookmark**: Get this template for reference (keep it separate from your projects)
+3. **🗂️ Create Project Workspace**: Make a Projects folder in your workspace for your apps
+4. **🚀 For Each App**: Create separate folder, copy prompts from template, save generated files in app folder
+5. **⚡ Deploy**: Each organized project runs independently!
 
-**Common Mistake**: Putting generated files in the template folder. **Don't do this!** Each project needs its own separate folder.
+**Key Concept**: Template = Reference cookbook. Your apps = Separate kitchens. Never mix them!
 
 ## 📚 What You Get
 
@@ -165,16 +166,23 @@ Each step builds comprehensive understanding:
 
 ## 🛠️ Getting Started
 
-**Fast Track** (Jump right in):
-1. **Copy** `prompts/step1-prompt-idealization.md` → **Paste into AI chat** → **AI will guide you through everything!**
+**🚨 First Time Users** - Read this first:
+1. **Download/bookmark this template** for permanent reference
+2. **Read**: `docs/Project-Setup-Guide.md` - Learn where to put your app files
+3. **Create project folder** in your own workspace (NOT in template folder)
+
+**Fast Track** (Build your first app):
+1. **Create app folder** in your Projects directory (e.g., `~/Projects/my-awesome-app/`)
+2. **Copy** `prompts/step1-prompt-idealization.md` from template → **Paste into AI chat**
+3. **Save generated files** in your app folder → **AI will guide you through everything!**
 
 **Complete Guide**:
 1. **Essential first read**: `docs/Project-Setup-Guide.md` - File organization and project management
 2. **Full workflow guide**: `docs/How-to-Use.md` - Complete instructions with FAQ and troubleshooting
 3. **For complex/enterprise apps**: `docs/Advanced-Applications.md` - Sophisticated development patterns
-4. **Copy prompt templates** from `prompts/` folder to your AI chat
+4. **Reference prompt templates** from `prompts/` folder (copy to AI chat, don't modify)
 5. **Follow the 5-step workflow** with time estimates and success checkpoints (Steps 0 & 5 optional)
-6. **Transfer generated code** to your organized project folder
+6. **Save all generated files** in your separate project folder (never in template folder)
 7. **Deploy your application** and start using it!
 
 ## 📚 Resources
