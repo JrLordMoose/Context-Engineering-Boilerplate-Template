@@ -7,14 +7,16 @@
 1. **Copy** `prompts/step1-prompt-idealization.md` → **Paste** into ChatGPT/Claude → **AI will ask for your app idea automatically**
 2. **Answer the AI's questions** → **Continue in same chat OR save response for later**
 3. **Copy** `prompts/step2-prompt-planning.md` → **Paste in same chat** → **AI automatically uses Step 1 context**
-4. **Copy** `prompts/step3-prompt-build.md` → **Paste in same chat** → **AI automatically uses all previous context**
+4. **Use Step 3 Context Builder** (recommended): Copy `prompts/utilities/step3-context-builder.md` → **AI validates structure and creates enhanced Step 3 with all context**
 5. **Copy the generated code** → **Create files in your dev environment** → **Run your app!**
 
 **Time needed**: ~30-60 minutes total | **Result**: Complete, working application
 
-> **🎯 New Features**: 
+> **🎯 Enhanced Features**: 
 > - **Zero-edit prompts** - just copy and paste, no manual editing required
 > - **Smart chat continuation** - complete all steps in one conversation, AI automatically uses previous context
+> - **Project reorganization** - automatically fix messy file structures
+> - **Context builder** - enhanced Step 3 with automatic validation and context integration
 > - **Flexible workflow** - start at any step, AI will guide you through missing steps
 
 ---
@@ -32,7 +34,9 @@ Before you start, make sure you have:
 
 ## Overview
 
-This template provides a systematic, five-step workflow for building applications using smart AI collaboration. The workflow transforms vague ideas into complete, working applications through structured prompts that help AI understand exactly what you need. Advanced users can access sophisticated Context Engineering features for enhanced AI collaboration.
+This template provides a systematic, five-step workflow for building applications using smart AI collaboration. The workflow transforms vague ideas into complete, working applications through structured prompts that help AI understand exactly what you need. 
+
+**Enhanced with project organization utilities** that automatically fix file structures and integrate context seamlessly, eliminating common workflow friction points. Advanced users can access sophisticated Context Engineering features for enhanced AI collaboration.
 
 ## Why This Workflow Works Better
 
@@ -220,14 +224,32 @@ Implementation Plan: Phase 1 (Authentication & User Management), Phase 2 (Task M
 - **Documentation Package** including setup guides and API documentation
 - **Deployment Configuration** ready for production use
 
-**Simple Process**:
+**Two Ways to Run Step 3**:
+
+#### Option A: Enhanced Step 3 (Recommended)
+
+**Use Context Builder for automatic context integration**:
+
+1. **Copy the prompt** from `prompts/utilities/step3-context-builder.md`
+2. **Paste it into your AI chat**
+3. **Provide your Step 1 and Step 2 outputs** when requested
+4. **AI validates your project structure** and either:
+   - Redirects you to fix organization issues, OR
+   - Generates enhanced Step 3 prompt with all context pre-loaded
+5. **Copy and use the enhanced Step 3 prompt** - no manual context management needed!
+
+**Benefits**: No context management, automatic validation, seamless workflow
+
+#### Option B: Standard Step 3
+
+**Traditional manual context approach**:
 
 1. **Copy the prompt** from `prompts/step3-prompt-build.md`
 2. **Paste it into your AI chat**
 3. **Add both your Step 1 and Step 2 outputs** where indicated (or AI will ask for them automatically)
 4. **Review the generated code** - AI provides structured output with file names and code blocks
-5. **Transfer code to your development environment** - manually copy files (see transfer guide below)
-6. **Test and deploy** your complete application
+
+**Both approaches result in**: Complete application ready for transfer to your development environment
 
 **Example Input**:
 ```
@@ -530,6 +552,15 @@ A: The Project Reorganizer can fix this automatically. Or manually move it to yo
 **Q: How do I know if my project structure is correct?**
 A: Use the validation checklist in the Project Setup Guide, or run the Project Reorganizer to verify your structure matches template standards.
 
+**Q: Should I use the Context Builder utility for Step 3?**
+A: **Yes, highly recommended!** The Context Builder is now the preferred approach. It validates your project structure, provides automatic context integration, and generates an enhanced Step 3 prompt with all your Step 1/Step 2 context pre-loaded. This eliminates manual context management errors and provides a much smoother experience.
+
+**Q: What's the difference between standard Step 3 and enhanced Step 3?**
+A: **Enhanced Step 3 (recommended)** validates structure + automatically includes all context + seamless workflow. **Standard Step 3** requires manual copy/paste of outputs + no validation. Enhanced version prevents common errors and saves time.
+
+**Q: When should I use the Context Builder vs standard Step 3?**
+A: **Use Context Builder (enhanced) when**: You want the best experience with validation and automatic context. **Use standard Step 3 only when**: You prefer manual control or have specific workflow requirements. Context Builder is recommended for 95% of users.
+
 ## Troubleshooting & Common Issues
 
 ### Step 1 Problems & Solutions
@@ -603,6 +634,23 @@ A: Use the validation checklist in the Project Setup Guide, or run the Project R
 
 **Problem**: Don't know if project structure is correct
 **Solution**: Use the Step 0 Validation Checklist in Project Setup Guide or run Project Reorganizer for automatic verification.
+
+### Utility Problems & Solutions
+
+**Problem**: Project Reorganizer doesn't understand my file structure
+**Solution**: Provide complete file listing with `ls -la` command output. Include all files and folders, even hidden ones starting with dots.
+
+**Problem**: Context Builder says my project structure is invalid
+**Solution**: Always run Project Reorganizer first to fix structure, then return to Context Builder. This is the designed workflow sequence.
+
+**Problem**: Can't find my Step 1 or Step 2 outputs
+**Solution**: Check your chat history from previous sessions, or re-run Step 1 and Step 2 if outputs were lost. Save outputs in files for future reference.
+
+**Problem**: Enhanced Step 3 prompt seems too long
+**Solution**: This is intentional - the enhanced prompt includes all your context automatically for perfect implementation. Copy the entire prompt for best results.
+
+**Problem**: Context Builder doesn't detect my Step outputs
+**Solution**: Paste complete AI responses from Steps 1-2, not excerpts. Include all user stories, architecture details, and planning information.
 
 ## Advanced Features
 
@@ -721,8 +769,18 @@ Every application generated includes:
 1. **Start with Step 0 (optional)** - Generate Context Engineering configuration for your project
 2. **Continue with Step 1** - Copy the idealization prompt, AI will ask for your app idea
 3. **Follow all steps** in order - each builds on the previous one (use same chat for best results)
-4. **Save each step's output** - you'll need it for the next step (if using separate sessions)
-5. **Build amazing applications** faster and with better quality!
+4. **Use Context Builder for Step 3** - Enhanced implementation with automatic validation and context integration
+5. **Save each step's output** - you'll need it for the next step (if using separate sessions)
+6. **Build amazing applications** faster and with better quality!
+
+## 🔧 Essential Utilities
+
+**Before starting development, ensure proper project organization:**
+
+- **📁 Project Reorganizer** (`prompts/utilities/project-reorganizer.md`): Fix messy file structures automatically
+- **🚀 Step 3 Context Builder** (`prompts/utilities/step3-context-builder.md`): Enhanced Step 3 with validation and automatic context integration
+
+**Quick Fix for Scattered Files**: Copy Project Reorganizer prompt → Paste into AI → Provide file listing → Follow reorganization instructions
 
 ## Behind the Scenes
 

@@ -4,6 +4,13 @@ A systematic, research-backed workflow for building applications using smart AI 
 
 > **"Context Engineering delivers 50% faster development with 25% fewer bugs than traditional approaches."**
 
+## 🆕 Latest Enhancements (2025)
+
+- **Project Reorganizer** - Automatically fix messy file structures with one command
+- **Step 3 Context Builder** - Enhanced implementation with automatic context integration
+- **Structure Validation** - Prevent common organization errors before they cause problems
+- **Seamless Workflow** - Complete all steps without manual context management
+
 ## 🚀 Quick Start (5 Minutes to Begin)
 
 **First Time? Read This**: [Project Setup Guide](docs/Project-Setup-Guide.md) - Learn where to put generated files and organize your projects
@@ -79,7 +86,8 @@ Context Engineering Template/
 │   ├── step4-prompt-review-refine.md # Optional code analysis and optimization
 │   ├── step5-prompt-advanced.md      # Advanced Context Engineering for power users
 │   └── utilities/
-│       └── project-reorganizer.md   # Automatic project file organization and cleanup
+│       ├── project-reorganizer.md   # Automatic project file organization and cleanup
+│       └── step3-context-builder.md # Enhanced Step 3 with automatic context integration
 ├── IMPROVEMENTS.md               # Detailed enhancement documentation with research citations
 └── README.md                     # This file
 ```
@@ -140,7 +148,8 @@ This boilerplate is designed for building:
    - **Result**: Complete technical plan with file structure and roadmap
 
 3. **Building** (10-25 minutes)
-   - AI generates complete, working application
+   - **Recommended**: Use Step 3 Context Builder for automatic validation and context integration
+   - AI generates complete, working application with all previous context
    - Includes tests, documentation, and deployment configuration
    - **Result**: Production-ready codebase you manually transfer to your dev environment
 
@@ -173,7 +182,9 @@ Each step builds comprehensive understanding:
 2. **Read**: `docs/Project-Setup-Guide.md` - Learn where to put your app files
 3. **Create project folder** in your own workspace (NOT in template folder)
 
-**🔧 Need to Fix Existing Project?** Use `prompts/utilities/project-reorganizer.md` to automatically reorganize messy files
+**🔧 New Utilities**: 
+- **Fix messy files**: Use `prompts/utilities/project-reorganizer.md` to automatically organize scattered files
+- **Enhanced Step 3**: Use `prompts/utilities/step3-context-builder.md` for automatic context integration and validation
 
 **Fast Track** (Build your first app):
 1. **Create app folder** in your Projects directory (e.g., `~/Projects/my-awesome-app/`)
