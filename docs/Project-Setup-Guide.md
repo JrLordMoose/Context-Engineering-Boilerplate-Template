@@ -407,29 +407,45 @@ npm start      # Run your app!
 
 ---
 
-## Common Mistakes & Solutions
+## 🚨 Critical Mistakes to Avoid (Based on Real User Errors)
 
-### ❌ Common Mistakes
+### ❌ Most Common Mistake: Wrong File Locations
 
-**Mistake 1**: Putting project files in template folder
+**Mistake 1**: Hiding CLAUDE.md in subdirectories
 ```
-📁 Context-Engineering-Boilerplate-Template/
+📁 my-project/
+└── 📁 .claude/
+    └── 📄 claude.md     # ❌ WRONG! Hidden and won't be found by AI tools
+```
+
+**✅ CORRECT**: CLAUDE.md in project root
+```
+📁 my-project/
+├── 📄 CLAUDE.md         # ✅ CORRECT! Project root level
+├── 📄 package.json      # Same level as other config files
+└── 📁 src/
+```
+
+**Why This Matters**: AI development tools look for CLAUDE.md in the project root. Hidden files won't be found automatically.
+
+### ❌ Other Critical Mistakes
+
+**Mistake 2**: Putting project files in template folder
+```
+📁 Context-Engineering-Template/
 ├── 📁 prompts/
 ├── 📄 my-app-files.js  # ❌ Wrong! Don't put project files here
-└── 📄 CLAUDE.md        # ❌ This gets overwritten
+└── 📄 CLAUDE.md        # ❌ This overwrites template
 ```
 
-**Mistake 2**: Not creating project folder before Step 0
-- Running Step 0 without knowing where to put the generated files
-- Getting confused about which CLAUDE.md to use
+**Mistake 3**: Not creating project folder before Step 0
+- Running Step 0 without knowing where to put generated files
+- Getting confused about file placement
+- **Solution**: Always create project folder FIRST
 
-**Mistake 3**: Mixing multiple projects in one folder
-```
-📁 my-projects/
-├── 📄 task-app.js      # ❌ Files from different projects mixed together
-├── 📄 store-app.js     # ❌ Confusing and hard to manage
-└── 📄 CLAUDE.md        # ❌ Which project does this configure?
-```
+**Mistake 4**: Over-engineering Step 0 configuration
+- Creating 2,000+ line neural field theory documents for simple apps
+- **Solution**: Keep Step 0 proportional to project complexity
 
 ### ✅ Correct Approach
 
@@ -794,6 +810,21 @@ A: Yes! Keep it for future projects. You'll copy the prompts from it each time y
 **Q: Can I modify the template folder?**
 A: It's better not to. Keep the template pristine and create project-specific configurations through Step 0 instead.
 
+**Q: Where exactly does CLAUDE.md go after Step 0?**
+A: In your project ROOT folder (same level as package.json, README.md). NOT in .claude/ subfolder or template folder.
+
+**Q: Should Step 0 files be hidden in subdirectories?**
+A: No! CLAUDE.md and context-sources.md must be in project root. Only .claude/subagents/ goes in a subdirectory.
+
+**Q: How do I know if my Step 0 setup is correct?**
+A: Check this structure:
+```
+my-project/
+├── CLAUDE.md ✅        # Must be here (project root)
+├── context-sources.md ✅  # Must be here (project root)  
+└── .claude/subagents/ ✅  # Only subagents go in subdirectory
+```
+
 **Q: What if my project gets really large with hundreds of files?**
 A: The folder structure will grow naturally. The neural field and agents in Step 5 help manage complexity. Consider breaking very large projects into multiple modules.
 
@@ -805,4 +836,41 @@ A: Yes! Your project folder works with VS Code, Replit, Claude Code, etc. The fi
 
 ---
 
-**Bottom Line**: Create a new folder for each project, save ALL generated files there (Step 0 config + Step 3 code), and keep everything organized. Simple rule: One project = One folder = Complete independence.
+## 🎯 Step 0 Validation Checklist
+
+**After running Step 0, verify your setup is correct:**
+
+### ✅ File Placement Validation
+- [ ] **CLAUDE.md exists** in project root (NOT in .claude/ subfolder)
+- [ ] **context-sources.md exists** in project root  
+- [ ] **.claude/subagents/ folder** created with agent files
+- [ ] **Project folder is separate** from template folder
+- [ ] **Template folder unchanged** and available for future reference
+
+### ✅ Structure Validation
+```bash
+# Your project should look like this after Step 0:
+my-project/
+├── CLAUDE.md ✅           # AI config in ROOT
+├── context-sources.md ✅   # Sources in ROOT
+└── .claude/ ✅            # Only subagents in subdirectory
+    └── subagents/
+        ├── code-generator.md
+        ├── project-planner.md
+        └── tech-advisor.md
+
+# Template stays separate:
+~/Downloads/Context-Engineering-Template/ ✅  # Reference only
+```
+
+### ✅ Ready for Steps 1-3
+- [ ] Project folder created and organized correctly
+- [ ] Step 0 configuration files in proper locations
+- [ ] Template available for referencing next prompts
+- [ ] Ready to copy Step 1 prompt from template
+
+**If any checklist item fails**: Review the Project Setup Guide and correct file placement before proceeding.
+
+---
+
+**Bottom Line**: Create a new folder for each project, save ALL generated files there (Step 0 config + Step 3 code), and keep everything organized. **CLAUDE.md must be in project root for AI tools to find it automatically.**

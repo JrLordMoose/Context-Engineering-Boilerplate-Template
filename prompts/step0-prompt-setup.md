@@ -205,9 +205,37 @@ Provide the complete Context Engineering setup in this structured format:
 - **Integration Readiness**: Confirm setup supports development workflow
 - **Performance Optimization**: Validate configuration efficiency
 
+## 🚨 CRITICAL: File Placement Instructions
+
+**Before providing configuration files, remind the user of correct file placement:**
+
+### Where to Save Generated Files
+
+**✅ CORRECT Structure** (user's project folder):
+```
+~/Projects/my-project-name/         # User's project folder
+├── CLAUDE.md                       # Generated config (ROOT level)
+├── context-sources.md              # Generated sources (ROOT level)
+├── .claude/subagents/              # Generated agents (subdirectory)
+├── [Step 3 files will go here]    # Future app files
+└── [All other project files]      # User's application
+```
+
+**❌ WRONG Locations** (prevent these mistakes):
+```
+# Don't put files here:
+.claude/claude.md                   # ❌ Hidden in subdirectory
+Context-Engineering-Template/       # ❌ In template folder
+config/CLAUDE.md                    # ❌ In config subdirectory
+```
+
+**Essential Rule**: All Context Engineering files go in the PROJECT ROOT (same level as package.json, README.md, src/ folder).
+
 ## Ready to Begin
 
 Please start by analyzing my project information and recommending the optimal Context Engineering framework level. Then generate the complete configuration files optimized for my specific project needs.
+
+**Important**: When providing files, include clear instructions for where to save each file in the user's project directory.
 
 ---
 
