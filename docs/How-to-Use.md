@@ -519,6 +519,17 @@ A: Yes! NOCODE protocols provide sophisticated Context Engineering capabilities 
 **Q: Should I use Step 5 for my first project?**
 A: No, start with Steps 1-3 for your first project. Step 5 adds sophisticated capabilities that are most valuable once you're comfortable with the basic workflow and have complex needs that benefit from advanced features.
 
+### Project Organization Questions
+
+**Q: My project files are a mess. How do I reorganize them properly?**
+A: Use the Project Reorganizer utility! Copy `prompts/utilities/project-reorganizer.md` into AI chat. It will analyze your file structure and provide exact commands to reorganize everything correctly.
+
+**Q: I accidentally put CLAUDE.md in the wrong place. How do I fix it?**
+A: The Project Reorganizer can fix this automatically. Or manually move it to your project root: `mv .claude/claude.md CLAUDE.md`
+
+**Q: How do I know if my project structure is correct?**
+A: Use the validation checklist in the Project Setup Guide, or run the Project Reorganizer to verify your structure matches template standards.
+
 ## Troubleshooting & Common Issues
 
 ### Step 1 Problems & Solutions
@@ -578,6 +589,20 @@ A: No, start with Steps 1-3 for your first project. Step 5 adds sophisticated ca
 
 **Problem**: NOCODE protocols seem too technical
 **Solution**: Use the conversation optimization templates first - they're the most accessible. Build familiarity before moving to more sophisticated protocols.
+
+### Project Organization Problems & Solutions
+
+**Problem**: Files are scattered and disorganized
+**Solution**: Use the Project Reorganizer utility (`prompts/utilities/project-reorganizer.md`) to automatically analyze and reorganize your project structure.
+
+**Problem**: CLAUDE.md not being found by AI tools
+**Solution**: Ensure CLAUDE.md is in project root, not hidden in subdirectories. Use Project Reorganizer to verify correct placement.
+
+**Problem**: Project mixed with template files
+**Solution**: Create separate project folder and move all generated files there. Template should remain as reference only.
+
+**Problem**: Don't know if project structure is correct
+**Solution**: Use the Step 0 Validation Checklist in Project Setup Guide or run Project Reorganizer for automatic verification.
 
 ## Advanced Features
 

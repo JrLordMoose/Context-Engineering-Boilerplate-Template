@@ -77,7 +77,9 @@ Context Engineering Template/
 │   ├── step2-prompt-planning.md      # Architecture design with visual diagrams (10-20 min)
 │   ├── step3-prompt-build.md         # Complete code generation (10-25 min)
 │   ├── step4-prompt-review-refine.md # Optional code analysis and optimization
-│   └── step5-prompt-advanced.md      # Advanced Context Engineering for power users
+│   ├── step5-prompt-advanced.md      # Advanced Context Engineering for power users
+│   └── utilities/
+│       └── project-reorganizer.md   # Automatic project file organization and cleanup
 ├── IMPROVEMENTS.md               # Detailed enhancement documentation with research citations
 └── README.md                     # This file
 ```
@@ -170,6 +172,8 @@ Each step builds comprehensive understanding:
 1. **Download/bookmark this template** for permanent reference
 2. **Read**: `docs/Project-Setup-Guide.md` - Learn where to put your app files
 3. **Create project folder** in your own workspace (NOT in template folder)
+
+**🔧 Need to Fix Existing Project?** Use `prompts/utilities/project-reorganizer.md` to automatically reorganize messy files
 
 **Fast Track** (Build your first app):
 1. **Create app folder** in your Projects directory (e.g., `~/Projects/my-awesome-app/`)
