@@ -6,12 +6,15 @@ A systematic, research-backed workflow for building applications using smart AI 
 
 ## 🚀 Quick Start (5 Minutes to Begin)
 
-1. **Copy** `prompts/step1-prompt-idealization.md` → **Paste** into ChatGPT/Claude → **AI will ask for your app idea automatically**
-2. **Answer AI questions** → **Continue in same chat OR save response for later**
-3. **Copy next step prompts** → **AI automatically uses previous context if in same chat**
-4. **Copy generated code** → **Create files in your dev environment** → **Run your app!**
+**First Time? Read This**: [Project Setup Guide](docs/Project-Setup-Guide.md) - Learn where to put generated files and organize your projects
 
-**Time**: 30-60 minutes total | **Result**: Complete, working application
+1. **Create project folder** (e.g., `my-awesome-app`) for your new application
+2. **Copy** `prompts/step1-prompt-idealization.md` → **Paste** into ChatGPT/Claude → **AI will ask for your app idea automatically**
+3. **Answer AI questions** → **Continue in same chat OR save response for later**
+4. **Copy next step prompts** → **AI automatically uses previous context if in same chat**
+5. **Copy generated code** → **Create files in your project folder** → **Run your app!**
+
+**Time**: 30-60 minutes total | **Result**: Complete, working application in your organized project folder
 
 ## Prerequisites
 
@@ -19,6 +22,17 @@ A systematic, research-backed workflow for building applications using smart AI 
 - Development environment (Replit, VS Code, Claude Code, GitHub Codespaces)
 - Basic copy/paste skills
 - Your app idea (can be vague!)
+
+## 📋 New User? Start Here
+
+**🚨 Important**: Before using any prompts, understand where generated files go:
+
+1. **📖 Read First**: [Project Setup Guide](docs/Project-Setup-Guide.md) - **Essential** file organization guide
+2. **📁 Create Project Folder**: Make a new folder for your app (e.g., `my-awesome-app`)
+3. **🚀 Begin Workflow**: Use prompts and save ALL generated files in your project folder
+4. **⚡ Deploy**: Your organized project is ready to run!
+
+**Common Mistake**: Putting generated files in the template folder. **Don't do this!** Each project needs its own separate folder.
 
 ## 📚 What You Get
 
@@ -54,7 +68,8 @@ Context Engineering Template/
 ├── CLAUDE.md                     # Enhanced AI configuration with Context Engineering protocols
 ├── docs/
 │   ├── How-to-Use.md            # Complete guide with FAQ, troubleshooting, and transfer instructions
-│   └── Advanced-Applications.md # Enterprise and complex system development guide
+│   ├── Advanced-Applications.md # Enterprise and complex system development guide
+│   └── Project-Setup-Guide.md   # Essential file organization and project management guide
 ├── prompts/
 │   ├── step0-prompt-setup.md         # Context Engineering configuration setup (5-10 min)
 │   ├── step1-prompt-idealization.md  # Smart requirements gathering (10-15 min)
@@ -154,12 +169,13 @@ Each step builds comprehensive understanding:
 1. **Copy** `prompts/step1-prompt-idealization.md` → **Paste into AI chat** → **AI will guide you through everything!**
 
 **Complete Guide**:
-1. **Read** `docs/How-to-Use.md` for full instructions and examples
-2. **For complex/enterprise apps**: Read `docs/Advanced-Applications.md` for sophisticated development patterns
-3. **Copy prompt templates** from `prompts/` folder to your AI chat
-4. **Follow the 5-step workflow** with time estimates and success checkpoints (Steps 0 & 5 optional)
-5. **Transfer generated code** to your development environment
-6. **Deploy your application** and start using it!
+1. **Essential first read**: `docs/Project-Setup-Guide.md` - File organization and project management
+2. **Full workflow guide**: `docs/How-to-Use.md` - Complete instructions with FAQ and troubleshooting
+3. **For complex/enterprise apps**: `docs/Advanced-Applications.md` - Sophisticated development patterns
+4. **Copy prompt templates** from `prompts/` folder to your AI chat
+5. **Follow the 5-step workflow** with time estimates and success checkpoints (Steps 0 & 5 optional)
+6. **Transfer generated code** to your organized project folder
+7. **Deploy your application** and start using it!
 
 ## 📚 Resources
 
